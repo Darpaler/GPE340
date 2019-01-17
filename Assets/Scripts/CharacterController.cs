@@ -7,6 +7,7 @@ public class CharacterController : MonoBehaviour
 
     public Pawn pawn;
     public Vector3 moveVector = new Vector3();
+    public Transform testObject;
 
 	// Use this for initialization
 	void Start () {
@@ -16,9 +17,31 @@ public class CharacterController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    moveVector.x = Input.GetAxis("Horizontal");
-	    moveVector.z = Input.GetAxis("Vertical");
-        pawn.Move(moveVector);
-
+        Rotation();
+	    Movement();
 	}
+
+    void Rotation()
+    {
+        Plane thePlane = new Plane(Vector3.up, pawn.tf.position);
+        Ray theRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        float distance;
+        thePlane.Raycast(theRay, out distance);
+
+        Vector3 targetPoint = theRay.GetPoint(distance);
+        //Temp: Move object to point
+        testObject.position = targetPoint;
+    }
+
+    void Movement()
+    {
+        moveVector.x = Input.GetAxis("Horizontal");
+        moveVector.z = Input.GetAxis("Vertical");
+
+        moveVector = pawn.tf.InverseTransformDirection(moveVector);
+        moveVector = Vector3.ClampMagnitude(moveVector, 1.0f);
+        pawn.Move(moveVector);
+    }
+
 }

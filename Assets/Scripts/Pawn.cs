@@ -5,12 +5,15 @@ using UnityEngine;
 public class Pawn : MonoBehaviour
 {
 
+    public Transform tf;
     private Animator anim;
+
 
 	// Use this for initialization
 	void Start ()
 	{
 
+	    tf = GetComponent<Transform>();
 	    anim = GetComponent<Animator>();
 
 	}
