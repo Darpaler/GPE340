@@ -7,6 +7,8 @@ public class Pawn : MonoBehaviour
 
     public Transform tf;
     private Animator anim;
+    public float moveSpeed;
+    public float turnSpeed;
 
 
 	// Use this for initialization
@@ -25,7 +27,15 @@ public class Pawn : MonoBehaviour
 
     public void Move(Vector3 direction)
     {
-        anim.SetFloat("Vertical", direction.z);
-        anim.SetFloat("Horizontal", direction.x);
+        anim.SetFloat("Vertical", direction.z * moveSpeed);
+        anim.SetFloat("Horizontal", direction.x * moveSpeed);
     }
+
+    public void RotateTowards(Vector3 targetPoint)
+    {
+        Vector3 vectorToLookDown = targetPoint - tf.position;
+        Quaternion lookRotation = Quaternion.LookRotation(vectorToLookDown, tf.up);
+        tf.rotation = Quaternion.RotateTowards(tf.rotation, lookRotation, turnSpeed * Time.deltaTime);
+    }
+
 }

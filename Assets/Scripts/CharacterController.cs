@@ -32,6 +32,8 @@ public class CharacterController : MonoBehaviour
         Vector3 targetPoint = theRay.GetPoint(distance);
         //Temp: Move object to point
         testObject.position = targetPoint;
+
+        pawn.RotateTowards(targetPoint);
     }
 
     void Movement()

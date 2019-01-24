@@ -427,6 +427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tf: {fileID: 0}
+  moveSpeed: 10
+  turnSpeed: 100
 --- !u!136 &741967637
 CapsuleCollider:
   m_ObjectHideFlags: 0
