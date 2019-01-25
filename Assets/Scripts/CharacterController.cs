@@ -44,6 +44,15 @@ public class CharacterController : MonoBehaviour
         moveVector = pawn.tf.InverseTransformDirection(moveVector);
         moveVector = Vector3.ClampMagnitude(moveVector, 1.0f);
         pawn.Move(moveVector);
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            pawn.isCrouching = true;
+        }
+        else if(Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            pawn.isCrouching = false;
+        }
     }
 
 }
