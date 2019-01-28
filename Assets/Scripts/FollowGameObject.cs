@@ -5,10 +5,10 @@ using UnityEngine;
 public class FollowGameObject : MonoBehaviour {
 
     //Variables
-    public Transform targetObjectTransform;
-    public Vector3 offset;
+    public Transform targetObjectTransform; //Target Object
+    public Vector3 offset;                  //Offest
 
-    private Transform tf;
+    private Transform tf;                   //Transform Component
 
 
 
@@ -16,7 +16,7 @@ public class FollowGameObject : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-
+        //Get Components
 	    tf = GetComponent<Transform>();
 
 	}
@@ -24,9 +24,9 @@ public class FollowGameObject : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-
+        //Follow The Target Object at a Specific Offset
 	    tf.position = targetObjectTransform.position + offset;
+        //Face the Target Object
         tf.LookAt(targetObjectTransform.position);
-
 	}
 }
