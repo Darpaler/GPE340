@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\HealthPickUp.cs" />
     <Compile Include="Assets\Scripts\Pawn.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
+    <Compile Include="Assets\Scripts\SpawnPoint.cs" />
     <None Include="Assets\FREE Food Pack\Shaders\Food.shader" />
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>C:/Users/darpaler/Desktop/BigVegas/GPE340/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>

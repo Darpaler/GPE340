@@ -21,7 +21,7 @@ public class Pawn : MonoBehaviour
     private CapsuleCollider capsuleCollider;    //CapsuleCollider Components
 
     [Header("Movement Settings")]
-    [SerializeField, Range(0f, 500f), Tooltip("The speed the player moves.")]
+    [SerializeField, Range(0f, 25f), Tooltip("The speed the player moves.")]
     public float moveSpeed;                     //Player's Movement Speed
     [SerializeField, Range(0f, 500f), Tooltip("The speed the player turns in degrees/second.")]
     public float turnSpeed;                     //Player's Turn Speed
