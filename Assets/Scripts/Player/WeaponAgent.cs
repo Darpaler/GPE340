@@ -48,4 +48,34 @@ public class WeaponAgent : MonoBehaviour {
             anim.SetInteger("CurrentWeapon", 0);
         }
     }
+
+    protected virtual void OnAnimatorIK()
+    {
+        if (!equippedWeapon)
+            return;
+        if (equippedWeapon.RightHandIKTarget)
+        {
+            anim.SetIKPosition(AvatarIKGoal.RightHand, equippedWeapon.RightHandIKTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.RightHand, equippedWeapon.RightHandIKTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
+        }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 0f);
+        }
+        if (equippedWeapon.LeftHandIKTarget)
+        {
+            anim.SetIKPosition(AvatarIKGoal.LeftHand, equippedWeapon.LeftHandIKTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.LeftHand, equippedWeapon.LeftHandIKTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
+        }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 0f);
+        }
+    }
 }
