@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Required Components
+[RequireComponent(typeof(WeaponAgent))]
+
 public class Weapon : MonoBehaviour {
 
     //Variables
@@ -9,11 +12,13 @@ public class Weapon : MonoBehaviour {
     public WeaponAnimationType animationType = WeaponAnimationType.None;
     public Transform RightHandIKTarget;
     public Transform LeftHandIKTarget;
+    protected WeaponAgent agent;
 
     // Use this for initialization
     void Start () {
-		
-	}
+		//GetComponents
+        agent = gameObject.GetComponent<WeaponAgent>();
+    }
 	
 	// Update is called once per frame
 	void Update () {

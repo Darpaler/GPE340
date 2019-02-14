@@ -14,4 +14,10 @@ public class ProjectileWeapon : Weapon
 	void Update () {
 		
 	}
+
+    void Shoot()
+    {
+
+    }
+
 }
