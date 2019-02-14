@@ -23,6 +23,7 @@ public class CharacterController : MonoBehaviour
         //Player Movement
         Rotation();
 	    Movement();
+        Shoot();
 	}
 
     /// <summary>
@@ -73,6 +74,19 @@ public class CharacterController : MonoBehaviour
 
         //Move The Pawn
         pawn.Move(moveVector);
+    }
+
+    void Shoot()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            pawn.gameObject.BroadcastMessage("PullTrigger");
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            pawn.gameObject.BroadcastMessage("ReleaseTrigger");
+        }
+
     }
 
 }

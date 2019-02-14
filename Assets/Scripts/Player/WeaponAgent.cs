@@ -30,6 +30,7 @@ public class WeaponAgent : MonoBehaviour {
     public void EquipWeapon(Weapon weapon)
     {
         equippedWeapon = Instantiate(weapon) as Weapon;
+        equippedWeapon.gameObject.layer = gameObject.layer;
         equippedWeapon.transform.SetParent(attachmentPoint);
         equippedWeapon.transform.localPosition = weapon.transform.localPosition;
         equippedWeapon.transform.localRotation = weapon.transform.localRotation;

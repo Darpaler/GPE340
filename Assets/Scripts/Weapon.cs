@@ -7,17 +7,19 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour {
 
-    //Variables
+    //Variable
     public enum WeaponAnimationType { None = 0, Handgun = 1, Rifle = 2 }
+    [Header("Weapon Type")]
     public WeaponAnimationType animationType = WeaponAnimationType.None;
+    public float damage;
+    [Header("IK Settings")]
     public Transform RightHandIKTarget;
     public Transform LeftHandIKTarget;
-    protected WeaponAgent agent;
 
     // Use this for initialization
     void Start () {
 		//GetComponents
-        agent = gameObject.GetComponent<WeaponAgent>();
+        
     }
 	
 	// Update is called once per frame

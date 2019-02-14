@@ -22,6 +22,10 @@ public class Health : MonoBehaviour {
     public void TakeDamage(float amount)
     {
         health -= amount;
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Heal(float amount, bool canGoOverMax = false)

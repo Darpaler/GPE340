@@ -37,8 +37,9 @@ public abstract class PickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        OnPickUp(other.gameObject);
+        if (other.gameObject.GetComponent<Pawn>() != null)
+        {
+            OnPickUp(other.gameObject);
+        }
     }
-
-
 }
