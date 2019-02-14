@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Required Components
-[RequireComponent(typeof(WeaponAgent))]
-
 public class Weapon : MonoBehaviour {
 
     //Variable

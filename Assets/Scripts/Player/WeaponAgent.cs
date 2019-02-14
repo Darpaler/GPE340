@@ -9,7 +9,7 @@ public class WeaponAgent : MonoBehaviour {
     //Variables
     public Weapon defaultWeapon;        //Starting weapon
     public Transform attachmentPoint;   //Where they hold the gun
-    private Weapon equippedWeapon;      //Currently equiped weapon
+    public Weapon equippedWeapon;      //Currently equiped weapon
     private Animator anim;              //Animator component
 
     // Use this for initialization

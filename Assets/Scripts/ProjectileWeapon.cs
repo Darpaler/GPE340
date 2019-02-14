@@ -20,7 +20,22 @@ public class ProjectileWeapon : Weapon
         timeNextShotIsReady = Time.time;
     }
 
-    private void Update()
+    protected void Update()
+    {
+        Shoot();
+    }
+
+    public void PullTrigger()
+    {
+        triggerPulled = true;
+    }
+
+    public void ReleaseTrigger()
+    {
+        triggerPulled = false;
+    }
+
+    protected virtual void Shoot()
     {
         if (triggerPulled)
         {
@@ -41,16 +56,6 @@ public class ProjectileWeapon : Weapon
         {
             timeNextShotIsReady = Time.time;
         }
-    }
-
-    public void PullTrigger()
-    {
-        triggerPulled = true;
-    }
-
-    public void ReleaseTrigger()
-    {
-        triggerPulled = false;
     }
 
 }
