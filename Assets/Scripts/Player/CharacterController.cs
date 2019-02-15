@@ -80,11 +80,11 @@ public class CharacterController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            pawn.gameObject.BroadcastMessage("PullTrigger");
+            pawn.gameObject.BroadcastMessage("PullTrigger", SendMessageOptions.DontRequireReceiver);
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            pawn.gameObject.BroadcastMessage("ReleaseTrigger");
+            pawn.gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
         }
 
     }

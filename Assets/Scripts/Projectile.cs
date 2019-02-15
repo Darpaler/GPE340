@@ -33,7 +33,9 @@ public class Projectile : MonoBehaviour {
         {
             targetHP.TakeDamage(damage);
         }
-        Destroy(gameObject);
+        if(other.gameObject.GetComponent<PickUp>() == null)
+        {
+            Destroy(gameObject);
+        }
     }
-
 }

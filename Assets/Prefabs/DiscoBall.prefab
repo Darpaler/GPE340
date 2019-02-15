@@ -22,7 +22,7 @@ GameObject:
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 33513966871958970}
   - component: {fileID: 23085319018447126}
   - component: {fileID: 135688784399845000}
-  - component: {fileID: 114365982421149038}
+  - component: {fileID: 114325836701494180}
   m_Layer: 0
   m_Name: DiscoBall
   m_TagString: Untagged
@@ -56,7 +56,7 @@ GameObject:
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -71,7 +71,7 @@ GameObject:
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -172,7 +172,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1024041123250434}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114365982421149038
+--- !u!114 &114325836701494180
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,13 +180,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1024041123250434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c035665412cbe124caabe4830d25a9ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 7327facf2d7ed764386ec1ebe964dbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animationType: 0
   damage: 10
   RightHandIKTarget: {fileID: 4395960732963060}
   LeftHandIKTarget: {fileID: 4072967779974186}
+  previousWeapon: {fileID: 0}
   bulletPrefab: {fileID: 114963308494633392, guid: 1f1ea6c72a712f44fa8fa0119d9aa1a6,
     type: 2}
   barrel: {fileID: 4394652711508580}

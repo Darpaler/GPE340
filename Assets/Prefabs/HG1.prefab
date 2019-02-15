@@ -37,7 +37,7 @@ GameObject:
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -119,7 +119,7 @@ GameObject:
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -572,7 +572,7 @@ MonoBehaviour:
     type: 2}
   barrel: {fileID: 4604886077037332}
   triggerPulled: 0
-  muzzleVelocity: 50
+  muzzleVelocity: 75
   shotsPerMinute: 120
   spread: 2.5
   projectileCount: 1
