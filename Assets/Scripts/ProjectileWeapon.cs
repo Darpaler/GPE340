@@ -6,17 +6,18 @@ public class ProjectileWeapon : Weapon
 {
     //Variables
     [Header("Bullet Settings")]
-    public Projectile bulletPrefab;
-    public Transform barrel;
-    public bool triggerPulled;
-    public float muzzleVelocity;
-    private float timeNextShotIsReady;
-    public float shotsPerMinute;
-    public float spread;
-    public float projectileCount;
+    public Projectile bulletPrefab;     //The bullet to shoot
+    public Transform barrel;            //Where to shoot from
+    public bool triggerPulled;          //If we're shooting
+    public float muzzleVelocity;        //How fast to shoot
+    private float timeNextShotIsReady;  //If we can shoot yet
+    public float shotsPerMinute;        //How many shots per minute
+    public float spread;                //The bullet spread
+    public float projectileCount;       //How many shots at once
 
     private void Awake()
     {
+        //Set the time
         timeNextShotIsReady = Time.time;
     }
 
@@ -37,23 +38,31 @@ public class ProjectileWeapon : Weapon
 
     protected virtual void Shoot()
     {
+        //If they pull the trigger
         if (triggerPulled)
         {
+            //If they waited the time to shoot
             while (Time.time > timeNextShotIsReady)
             {
+                //Shoot all of the bullets
                 for (int index = 0; index < projectileCount; index++)
                 {
-                    // Spawn a projectile
+                    //Spawn a projectile
                     Projectile projectile = Instantiate(bulletPrefab, barrel.position, barrel.rotation * Quaternion.Euler(Random.onUnitSphere * spread)) as Projectile;
+                    //Set damage 
                     projectile.damage = damage;
+                    //Set layer
                     projectile.gameObject.layer = gameObject.layer;
+                    //Add a force to it
                     projectile.rb.AddRelativeForce(Vector3.forward * muzzleVelocity, ForceMode.VelocityChange);
                 }
+                //Reset shot time
                 timeNextShotIsReady += 60f / shotsPerMinute;
             }
         }
         else if (Time.time > timeNextShotIsReady)
         {
+            //Keep track of time while they aren't shooting
             timeNextShotIsReady = Time.time;
         }
     }

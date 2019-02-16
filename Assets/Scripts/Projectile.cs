@@ -5,9 +5,9 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
     //Variables
-    public float damage{get; set;}
-    public float bulletLifetime;
-    public Rigidbody rb;
+    public float damage{get; set;}  //How much damage the projectile should do
+    public float bulletLifetime;    //How long the projectile lasts
+    public Rigidbody rb;            //Rigidbody Component
 
 
     // Use this for initialization
@@ -20,19 +20,17 @@ public class Projectile : MonoBehaviour {
         Destroy(gameObject, bulletLifetime);
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     private void OnTriggerEnter(Collider other)
     {
+        //If they have health, deal damage
         Health targetHP = other.gameObject.GetComponent<Health>();
         if (targetHP != null)
         {
             targetHP.TakeDamage(damage);
         }
+
+        //If we're not hitting a pickup object, then destroy the bullet
         if(other.gameObject.GetComponent<PickUp>() == null)
         {
             Destroy(gameObject);

@@ -5,22 +5,12 @@ using UnityEngine;
 public class Weapon : MonoBehaviour {
 
     //Variable
-    public enum WeaponAnimationType { None = 0, Handgun = 1, Rifle = 2 }
+    public enum WeaponAnimationType { None = 0, Handgun = 1, Rifle = 2 }    //Weapon types
     [Header("Weapon Type")]
-    public WeaponAnimationType animationType = WeaponAnimationType.None;
-    public float damage;
+    public WeaponAnimationType animationType = WeaponAnimationType.None;    //Current weapon type
+    public float damage;                                                    //How much damage a weapon does
     [Header("IK Settings")]
-    public Transform RightHandIKTarget;
-    public Transform LeftHandIKTarget;
+    public Transform RightHandIKTarget;                                     //Where the right hand should go
+    public Transform LeftHandIKTarget;                                      //Where the left hand should go
 
-    // Use this for initialization
-    void Start () {
-		//GetComponents
-        
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

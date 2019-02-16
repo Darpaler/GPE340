@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4842627049625202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4884823910366144}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_PantLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4657053107882842}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Jowel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4503985524415916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_PantLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4969711554638974}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4960031183600562}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_CapeC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4347752914001424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4777233676554352}
   - component: {fileID: 137274934595908402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Elvis_BodyGeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4579936960240980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4056751344163484}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_Sleeve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4091460639105688}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4811353119419836}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4043076446716614}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4576733947827010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4143002738129352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_CapeB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4250119125644650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4073036812793698}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4972539324557012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Belly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4858163930682772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_Peck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,8 +305,23 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4875038485777502}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandRing3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1179697282291788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4132652715676478}
+  m_Layer: 9
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4705487872382294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4911484741363482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Hair_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018601354393680}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4472264775407112}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4990421798000488}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4515057164192722}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4061272637332962}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_CapeA1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4167465750548124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +461,7 @@ GameObject:
   - component: {fileID: 114135453073754408}
   - component: {fileID: 114901374097660866}
   - component: {fileID: 114137080528324790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4189847924018074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4003990064922732}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4965532840691150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4110395178085314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4491880272488602}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4286597607020984}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_Collar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4658209301239610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_Collar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4221100164034436}
   - component: {fileID: 137493024134213202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Elvis_MouthAnimGeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4492141753528274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4199918014493718}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Hair_Front1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,8 +628,25 @@ GameObject:
   m_Component:
   - component: {fileID: 4374595591033920}
   - component: {fileID: 137411684593670004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Elvis_EyesAnimGeo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1433116893232702
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224831833237012374}
+  - component: {fileID: 222508005959093986}
+  - component: {fileID: 114461549241678594}
+  m_Layer: 5
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,7 +660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4816850586389840}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Hair_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4988233099313660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4455201466416638}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_Sleeve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4559612995273642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4001691315184362}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_CapeC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +735,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4111202807730078}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4947561304522128}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_CapeA1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -733,7 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4904116058515156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4349808989197168}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_CapeC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4868086661275266}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,7 +810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4847389919522460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:ElvisFacialAnim_Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4226920256353914}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_Peck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,7 +840,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4627384300177618}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_Collar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4866604785779040}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_CapeB1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4256743777615366}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_CapeC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,7 +885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4519962365743244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_Collar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,7 +900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4081137827307764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,7 +915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4780800342764098}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4243250144223252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_CapeB1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -913,7 +945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4932761572837300}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_CapeA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -928,7 +960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4550488556522550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4135101631899298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4434289473532652}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,7 +1005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4864763430534970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +1020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4755049851337454}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4343815022843398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4732355583694736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4577369748727850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4091235101128398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1063,7 +1095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4938825604610822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1078,7 +1110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4223388174750734}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4705387447991272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1108,7 +1140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4217913715878708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1123,7 +1155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4780210951782582}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4579508734733576}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Right_CapeA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4891839585746180}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1168,7 +1200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4734796300956898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1183,7 +1215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4422782027167732}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +1230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4877344548395200}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Hair_Front2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,8 +1245,27 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4016182491486818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandThumb2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1886336145520836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224818337447288548}
+  - component: {fileID: 223062203929122284}
+  - component: {fileID: 114491192980725830}
+  - component: {fileID: 114545569220811034}
+  - component: {fileID: 114596522900914050}
+  m_Layer: 5
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1228,7 +1279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4276590622361676}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Left_CapeB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,8 +1295,24 @@ GameObject:
   m_Component:
   - component: {fileID: 4457775930859438}
   - component: {fileID: 137817709575093036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Elvis_BrowsAnimGeo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1905819387473374
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224594393161444888}
+  - component: {fileID: 114764362367505340}
+  m_Layer: 5
+  m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1259,7 +1326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4202314091755784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4953442537374640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,7 +1356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4675830738692858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1304,7 +1371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4649566781174046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,8 +1386,23 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4652138077280550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:LeftFoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1944245297402408
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224873398181064556}
+  m_Layer: 5
+  m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1334,7 +1416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4444695419812876}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,8 +1431,25 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4612615393229716}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: newVegas:Collar_Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1997819580441852
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224248570198265890}
+  - component: {fileID: 222422936052544002}
+  - component: {fileID: 114855412419757376}
+  m_Layer: 5
+  m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1552,8 +1651,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4492141753528274}
+  - {fileID: 4132652715676478}
+  - {fileID: 224818337447288548}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4132652715676478
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1179697282291788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.333, z: 0.541}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4121192126177200}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4135101631899298
 Transform:
@@ -2649,8 +2763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9ece84f976e994284d456722fdfd03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
   maxHealth: 20
+  healthBar: {fileID: 0}
 --- !u!114 &114137080528324790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2664,6 +2778,158 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultWeapon: {fileID: 114057903278608848, guid: 153ece9e472e6c84f9b2e29f65fa6971,
     type: 2}
+  attachmentPoint: {fileID: 4132652715676478}
+  equippedWeapon: {fileID: 0}
+--- !u!114 &114461549241678594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433116893232702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114491192980725830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886336145520836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &114545569220811034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886336145520836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &114596522900914050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886336145520836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6db93749fab0c14697f67359c161f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114764362367505340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1905819387473374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 224248570198265890}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 10
+  m_WholeNumbers: 0
+  m_Value: 10
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114855412419757376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997819580441852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0.031424284, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114901374097660866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3214,3 +3480,131 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00000023841858, y: 0.8507444, z: -0.055192754}
     m_Extent: {x: 0.14731736, y: 0.060083747, z: 0.076761335}
   m_DirtyAABB: 0
+--- !u!222 &222422936052544002
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997819580441852}
+  m_CullTransparentMesh: 0
+--- !u!222 &222508005959093986
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433116893232702}
+  m_CullTransparentMesh: 0
+--- !u!223 &223062203929122284
+Canvas:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886336145520836}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &224248570198265890
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997819580441852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224873398181064556}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224594393161444888
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1905819387473374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224831833237012374}
+  - {fileID: 224873398181064556}
+  m_Father: {fileID: 224818337447288548}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224818337447288548
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886336145520836}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 1}
+  m_Children:
+  - {fileID: 224594393161444888}
+  m_Father: {fileID: 4121192126177200}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.5}
+  m_SizeDelta: {x: 583, y: 413}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224831833237012374
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433116893232702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224594393161444888}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5.5, y: 0}
+  m_SizeDelta: {x: -11, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224873398181064556
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944245297402408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224248570198265890}
+  m_Father: {fileID: 224594393161444888}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}

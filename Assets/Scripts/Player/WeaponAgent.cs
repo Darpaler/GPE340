@@ -18,22 +18,24 @@ public class WeaponAgent : MonoBehaviour {
         //Get Components
         anim = gameObject.GetComponent<Animator>();
 
+        //Equip Default
         EquipWeapon(defaultWeapon);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-
-	}
-
+    //Equip Weapon
     public void EquipWeapon(Weapon weapon)
     {
+        //Create Weapon
         equippedWeapon = Instantiate(weapon) as Weapon;
+        //Set it to player's layer
         equippedWeapon.gameObject.layer = gameObject.layer;
+        //Make it a child of player
         equippedWeapon.transform.SetParent(attachmentPoint);
+        //Set weapon position
         equippedWeapon.transform.localPosition = weapon.transform.localPosition;
+        //Set weapon rotation
         equippedWeapon.transform.localRotation = weapon.transform.localRotation;
+        //Change player's animation
         anim.SetInteger("CurrentWeapon", (int) equippedWeapon.animationType);
     }
 
@@ -42,18 +44,26 @@ public class WeaponAgent : MonoBehaviour {
     /// 
     public void Unequip()
     {
+        //If they have a weapon
         if (equippedWeapon)
         {
+            //destroy it
             Destroy(equippedWeapon.gameObject);
+            //Set their weapon to null
             equippedWeapon = null;
+            //Set the player's animation
             anim.SetInteger("CurrentWeapon", 0);
         }
     }
 
+    //Set IK
     protected virtual void OnAnimatorIK()
     {
+        //If they don't have a weapon, don't use IK
         if (!equippedWeapon)
             return;
+
+        //Set right hand position and rotation
         if (equippedWeapon.RightHandIKTarget)
         {
             anim.SetIKPosition(AvatarIKGoal.RightHand, equippedWeapon.RightHandIKTarget.position);
@@ -66,6 +76,8 @@ public class WeaponAgent : MonoBehaviour {
             anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 0f);
             anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 0f);
         }
+
+        //Set left hand position and rotation
         if (equippedWeapon.LeftHandIKTarget)
         {
             anim.SetIKPosition(AvatarIKGoal.LeftHand, equippedWeapon.LeftHandIKTarget.position);

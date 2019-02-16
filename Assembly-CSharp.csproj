@@ -64,6 +64,7 @@
     <Compile Include="Assets\LowPoly Weapon Pack\Scripts\RotateWeapon.cs" />
     <Compile Include="Assets\LowPoly Weapon Pack\Scripts\WeaponHolder.cs" />
     <Compile Include="Assets\Scripts\AlignRotation.cs" />
+    <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\OneShotWeapon.cs" />
     <Compile Include="Assets\Scripts\PickUps\DamagePickUp.cs" />
     <Compile Include="Assets\Scripts\PickUps\HealthPickUp.cs" />

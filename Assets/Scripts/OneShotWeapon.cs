@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OneShotWeapon : ProjectileWeapon {
 
-	// Update is called once per frame
+    //Destroy Oneshot weapons after use
 	protected override void Shoot ()
     {
         base.Shoot();
