@@ -10,12 +10,10 @@ public class Pawn : MonoBehaviour
 
     //Variables
     [Header("Components")]
-    [SerializeField]
-    private Transform tf;                        //Transform Component
+    public Transform tf;                        //Transform Component
     public Transform Transform
     {get{return tf;}private set{tf = value;}}
-    [SerializeField]
-    private Animator anim;                      //Animator Component
+    public Animator anim;                      //Animator Component
     [SerializeField]
     private CapsuleCollider capsuleCollider;    //CapsuleCollider Components
 
