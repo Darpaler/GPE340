@@ -10,6 +10,9 @@ public class SpawnPoint : MonoBehaviour {
     private GameObject spawnedObject;                                         //The object that we spawned
     private float timeUntilNextRespawn;                                       //Time until it respawns again
     private Transform tf;                                                     //Where it respawns
+    [Header("Gizmos Settings")]
+    public Vector3 gizmoSize;                                                 //Spawn box visual size
+    public Color gizmoColor;                                                  //Spawn box color
 
 
     private void Awake()
@@ -44,6 +47,15 @@ public class SpawnPoint : MonoBehaviour {
 
         //Reset timer
         timeUntilNextRespawn = respawnTime;
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.matrix = transform.localToWorldMatrix;
+        Gizmos.color = gizmoColor;
+        Vector3 gizmoCenter = new Vector3(0, gizmoSize.y / 2, 0);
+        Gizmos.DrawCube(gizmoCenter, gizmoSize);
+        Gizmos.DrawRay(gizmoCenter, Vector3.forward);
     }
 
 }
