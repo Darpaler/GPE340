@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class RagdollControls : MonoBehaviour
 {
 
+    //Variables
     public GameObject objectToApplyRagdoll;
-
 
     //Turn off to ragdoll
     public Collider mainCollider;
@@ -27,6 +27,7 @@ public class RagdollControls : MonoBehaviour
         anim = objectToApplyRagdoll.GetComponent<Animator>();
 	    mainRigidbody = objectToApplyRagdoll.GetComponent<Rigidbody>();
 	    agent = objectToApplyRagdoll.GetComponent<NavMeshAgent>();
+	    objectToApplyRagdoll = gameObject;
 
         partRigidbodies = new List<Rigidbody>(objectToApplyRagdoll.GetComponentsInChildren<Rigidbody>());
         partColliders = new List<Collider>(objectToApplyRagdoll.GetComponentsInChildren<Collider>());

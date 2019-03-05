@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour {
 
     //Variables
-    public Pawn playerPawn;
     private Pawn pawn;
     private NavMeshAgent agent;
 
@@ -17,12 +16,15 @@ public class AIController : MonoBehaviour {
 	    pawn = GetComponent<Pawn>();
 	    agent = GetComponent<NavMeshAgent>();
 
+        //Set GameManager
+	    GameManager.instance.enemy = this;
+
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	    agent.SetDestination(playerPawn.tf.position);
+	    agent.SetDestination(GameManager.instance.player.pawn.tf.position);
 
 	    MoveWithRootMotion();
 	}
