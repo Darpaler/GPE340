@@ -3009,6 +3009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c729800966e3e364b8788e40c92862da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetDistance: 5
 --- !u!114 &114166526434503752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3187,6 +3188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   healthBar: {fileID: 0}
+  despawnTime: 3
 --- !u!114 &114790738608723044
 MonoBehaviour:
   m_ObjectHideFlags: 1
