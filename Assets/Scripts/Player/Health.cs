@@ -49,9 +49,13 @@ public class Health : MonoBehaviour {
             {
                 //Activate Ragdoll
                 ragdoll.ActivateRagdoll();
-                if(weaponAgent != null)
+                if (weaponAgent != null)
                 {
+                    //Give the weapon a Rigidbody for gravity
                     weaponAgent.attachmentPoint.gameObject.AddComponent<Rigidbody>();
+
+                    //Make sure it's not shooting
+                    gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
                 }
                 //Destroy the player
                 Destroy(gameObject, despawnTime);

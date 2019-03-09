@@ -6,8 +6,9 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour {
 
     //Variables
-    private Pawn pawn;
-    private NavMeshAgent agent;
+    private Pawn pawn;              //The Pawn Component
+    private NavMeshAgent agent;     //The NavMesh Component
+    private Health hp;              //The Health Component
     public float targetDistance;    //Distance from the AI to the player to stop at
 
 	// Use this for initialization
@@ -16,6 +17,7 @@ public class AIController : MonoBehaviour {
         //Get Components
 	    pawn = GetComponent<Pawn>();
 	    agent = GetComponent<NavMeshAgent>();
+        hp = GetComponent<Health>();
 
         //Set GameManager
 	    GameManager.instance.enemy = this;
@@ -25,31 +27,43 @@ public class AIController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        //If we died
+        if(hp.health <= 0)
+        {
+            //Do nothing
+            return;
+        }
+
+        //Chase Player
         agent.SetDestination(GameManager.instance.player.pawn.tf.position);
 
+        //Always Face Player
         pawn.RotateTowards(GameManager.instance.player.pawn.tf.position);
 
         //If we're not too close to the player
         if (Vector3.Distance(GameManager.instance.player.pawn.tf.position, pawn.tf.position) > targetDistance + 1)
         {
+            //Get close to them
             MoveWithRootMotion(true);
+            //Not close enough to shoot yet
             pawn.gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
-            Debug.Log("Release");
         }
-        //If we're too close run away
+        //If we're too close
         else if (Vector3.Distance(GameManager.instance.player.pawn.tf.position, pawn.tf.position) < targetDistance - 1)
         {
+            //Run away
             MoveWithRootMotion(false);
+            //We're close enough to shoot now
             pawn.gameObject.BroadcastMessage("PullTrigger", SendMessageOptions.DontRequireReceiver);
-            Debug.Log("Pull");
         }
-        //If we're at the target distance, don't move at all
+        //If we're at the target distance
         else
         {
+            //Don't move
             pawn.anim.SetFloat("Horizontal", 0);
             pawn.anim.SetFloat("Vertical", 0);
+            //We're close enough to shoot
             pawn.gameObject.BroadcastMessage("PullTrigger", SendMessageOptions.DontRequireReceiver);
-            Debug.Log("Pull");
         }
 
     }
@@ -58,7 +72,6 @@ public class AIController : MonoBehaviour {
     {
         //Get desired velocity from NavMesh Agent
         Vector3 desiredVelocity = agent.desiredVelocity * pawn.moveSpeed;
-       
         desiredVelocity = pawn.tf.InverseTransformDirection(desiredVelocity);
 
         //Run towards the player

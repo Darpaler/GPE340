@@ -28,29 +28,11 @@ public class RagdollControls : MonoBehaviour
 	    mainRigidbody = objectToApplyRagdoll.GetComponent<Rigidbody>();
 	    agent = objectToApplyRagdoll.GetComponent<NavMeshAgent>();
 	    objectToApplyRagdoll = gameObject;
-
         partRigidbodies = new List<Rigidbody>(objectToApplyRagdoll.GetComponentsInChildren<Rigidbody>());
         partColliders = new List<Collider>(objectToApplyRagdoll.GetComponentsInChildren<Collider>());
 
         //Deactivate ragdoll by default
 	    DeactivateRagdoll();
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	    if (Input.GetKeyDown(KeyCode.P))
-	    {
-	        ActivateRagdoll();
-
-	    }
-
-	    if (Input.GetKeyDown(KeyCode.O))
-	    {
-	        DeactivateRagdoll();
-	    }
-
 	}
 
     public void ActivateRagdoll()

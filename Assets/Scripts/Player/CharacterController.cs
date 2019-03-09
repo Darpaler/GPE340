@@ -11,11 +11,6 @@ public class CharacterController : MonoBehaviour
     private Vector3 moveVector = new Vector3();     //Our Movement Input
     [SerializeField, Tooltip("Object for testing where the mouse is.")]
     public Transform testObject;                    //Object For Testing Mouse Location
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update ()
@@ -86,7 +81,5 @@ public class CharacterController : MonoBehaviour
         {
             pawn.gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
         }
-
     }
-
 }
