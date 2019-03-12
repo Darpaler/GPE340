@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 195328481169784836}
   - component: {fileID: 114164020350163442}
   - component: {fileID: 114790738608723044}
+  - component: {fileID: 114571020202461302}
   m_Layer: 10
   m_Name: Dummy
   m_TagString: Untagged
@@ -3096,6 +3097,33 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114571020202461302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1453913298368150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d971e8533e3e0f8478bcbe38f3f4309a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropTable:
+  - objectToDrop: {fileID: 1946296489240932, guid: bfe39cbac9194dd4089eb5c97b3f21cd,
+      type: 2}
+    weight: 10
+  - objectToDrop: {fileID: 1552034096343654, guid: 0d4e6723e6a6d7346a1b0dd7292eb939,
+      type: 2}
+    weight: 10
+  - objectToDrop: {fileID: 1811352608003954, guid: eda63871c9ebf1d4ebc81f7e24be8b94,
+      type: 2}
+    weight: 5
+  - objectToDrop: {fileID: 1636722277479640, guid: f21bb6e0abdb19040b32d8d2d4d00209,
+      type: 2}
+    weight: 25
+  - objectToDrop: {fileID: 1471496505141522, guid: f9311fe468c684949b27b9162d34f745,
+      type: 2}
+    weight: 25
 --- !u!114 &114578266053335328
 MonoBehaviour:
   m_ObjectHideFlags: 1
