@@ -15,6 +15,14 @@ public class CharacterController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+	    if (Input.GetKeyDown(KeyCode.P))
+	    {
+	        GameManager.instance.TogglePause();
+	    }
+
+        if (GameManager.instance.isPaused)
+            return;
+
         //Player Movement
         Rotation();
 	    Movement();

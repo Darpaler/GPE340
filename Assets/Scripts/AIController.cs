@@ -27,8 +27,10 @@ public class AIController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.isPaused)
+            return;
         //If we died
-        if(hp.health <= 0)
+        if (hp.health <= 0)
         {
             //Do nothing
             return;

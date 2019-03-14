@@ -18,7 +18,9 @@ public abstract class PickUp : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+	    if (GameManager.instance.isPaused)
+	        return;
         //Spin the pickup
         Spin();
 
