@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 4441107086314900}
   - component: {fileID: 33448444377039410}
   - component: {fileID: 23245276605216392}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Charger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324927281510912}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4263667232111152}
   - component: {fileID: 33415715923156958}
   - component: {fileID: 23274382039174992}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 4238898176717678}
   - component: {fileID: 33388238469311198}
   - component: {fileID: 23746273202357008}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 4992881395503112}
   - component: {fileID: 33755403484752358}
   - component: {fileID: 23567035915790860}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 4103080119182312}
   - component: {fileID: 33782717807882506}
   - component: {fileID: 23683779242557896}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

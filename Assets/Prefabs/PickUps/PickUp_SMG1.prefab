@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4305630948241798}
   - component: {fileID: 33106801437875910}
   - component: {fileID: 23019293319681930}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Charger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4266342891770626}
   - component: {fileID: 33750431410966286}
   - component: {fileID: 23468345991102608}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FireMode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4686053730572338}
   - component: {fileID: 33642180622035624}
   - component: {fileID: 23556951135685424}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4322812425960522}
   - component: {fileID: 33775071832259606}
   - component: {fileID: 23016388456232528}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4385601321397810}
   - component: {fileID: 33076408685322764}
   - component: {fileID: 23746711538137566}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4113643261973926}
   - component: {fileID: 33636956543287662}
   - component: {fileID: 23378352393016886}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 95161641652572742}
   - component: {fileID: 65391764933052192}
   - component: {fileID: 114482005470862814}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PickUp_SMG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

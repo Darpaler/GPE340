@@ -7,10 +7,12 @@ using UnityEngine;
 public class WeaponAgent : MonoBehaviour {
 
     //Variables
-    public Weapon defaultWeapon;        //Starting weapon
-    public Transform attachmentPoint;   //Where they hold the gun
+    public Weapon defaultWeapon;       //Starting weapon
+    public Transform attachmentPoint;  //Where they hold the gun
     public Weapon equippedWeapon;      //Currently equiped weapon
-    private Animator anim;              //Animator component
+    private Animator anim;             //Animator component
+    public Transform UIWeaponPosition; //Where to show the weapon on the UI
+    private Weapon equippedWeaponUI;   //The weapon shown on the UI
 
     // Use this for initialization
     void Start () {
@@ -37,6 +39,10 @@ public class WeaponAgent : MonoBehaviour {
         equippedWeapon.transform.localRotation = weapon.transform.localRotation;
         //Change player's animation
         anim.SetInteger("CurrentWeapon", (int) equippedWeapon.animationType);
+        //Set UI Weapon
+        equippedWeaponUI = Instantiate(weapon, UIWeaponPosition) as Weapon;
+        equippedWeaponUI.transform.localPosition = Vector3.zero;
+
     }
 
     /// 
@@ -53,6 +59,8 @@ public class WeaponAgent : MonoBehaviour {
             equippedWeapon = null;
             //Set the player's animation
             anim.SetInteger("CurrentWeapon", 0);
+            //Set UI Weapon
+            Destroy(equippedWeaponUI.gameObject);
         }
     }
 

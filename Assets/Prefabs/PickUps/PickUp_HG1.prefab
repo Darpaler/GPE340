@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4933066754163694}
   - component: {fileID: 33293860738738240}
   - component: {fileID: 23731243441349104}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Charger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4585415593669314}
   - component: {fileID: 33255983175047706}
   - component: {fileID: 23600830395419252}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4334896793081838}
   - component: {fileID: 33274461031558748}
   - component: {fileID: 23122082408709216}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4635032629190016}
   - component: {fileID: 33607364718145210}
   - component: {fileID: 23599544122537112}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 65612143728068868}
   - component: {fileID: 95314707125855138}
   - component: {fileID: 114649378472497908}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PickUp_HG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 4095803799998238}
   - component: {fileID: 33129485714304646}
   - component: {fileID: 23950456079489276}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
