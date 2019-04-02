@@ -3139,6 +3139,7 @@ MonoBehaviour:
     type: 2}
   attachmentPoint: {fileID: 4143059120762154}
   equippedWeapon: {fileID: 0}
+  UIWeaponPosition: {fileID: 0}
 --- !u!114 &114727183261000938
 MonoBehaviour:
   m_ObjectHideFlags: 1

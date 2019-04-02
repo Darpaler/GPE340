@@ -10,7 +10,7 @@ public class OneShotWeapon : ProjectileWeapon {
         base.Shoot();
         if (triggerPulled)
         {
-            Destroy(gameObject);
+            gameObject.GetComponentInParent<WeaponAgent>().Unequip();
         }
        
     }

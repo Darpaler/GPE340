@@ -40,9 +40,11 @@ public class WeaponAgent : MonoBehaviour {
         //Change player's animation
         anim.SetInteger("CurrentWeapon", (int) equippedWeapon.animationType);
         //Set UI Weapon
-        equippedWeaponUI = Instantiate(weapon, UIWeaponPosition) as Weapon;
-        equippedWeaponUI.transform.localPosition = Vector3.zero;
-
+        if (UIWeaponPosition != null)
+        {
+            equippedWeaponUI = Instantiate(weapon, UIWeaponPosition) as Weapon;
+            equippedWeaponUI.transform.localPosition = Vector3.zero;
+        }
     }
 
     /// 
