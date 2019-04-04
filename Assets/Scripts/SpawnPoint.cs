@@ -7,7 +7,8 @@ public class SpawnPoint : MonoBehaviour {
     //Variables
     public float respawnTime;                                                 //How long it takes to respawn
     public GameObject objectToSpawn;                                          //Object that is respawning
-    private GameObject spawnedObject;                                         //The object that we spawned
+    [HideInInspector]
+    public GameObject spawnedObject;                                         //The object that we spawned
     private float timeUntilNextRespawn;                                       //Time until it respawns again
     private Transform tf;                                                     //Where it respawns
     [Header("Gizmos Settings")]

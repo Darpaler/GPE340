@@ -1,47 +1,72 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class CharacterController : PawnController
 {
     //Variables
     [SerializeField, Tooltip("The pawn that the player controls.")]
-    public Pawn pawn;                               //The Player's Pawn
-    [SerializeField, Tooltip ("The player's movement input.")]
-    private Vector3 moveVector = new Vector3();     //Our Movement Input
+    public Pawn pawn; //The Player's Pawn
+
+    [SerializeField, Tooltip("The player's movement input.")]
+    private Vector3 moveVector = new Vector3(); //Our Movement Input
+
     [SerializeField, Tooltip("Object for testing where the mouse is.")]
-    public Transform testObject;                    //Object For Testing Mouse Location
-	
-	// Update is called once per frame
-	void Update ()
-	{
-	    if (Input.GetKeyDown(KeyCode.P))
-	    {
-	        GameManager.instance.TogglePause();
-	    }
+    public Transform testObject; //Object For Testing Mouse Location
+
+    public int lives;
+    private SpawnPoint spawn;
+
+    void Start()
+    {
+        spawn = GetComponent<SpawnPoint>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GameManager.instance.TogglePause();
+        }
 
         if (GameManager.instance.isPaused)
             return;
 
         //Player Movement
-        Rotation();
-	    Movement();
-        Shoot();
-	}
+        if (pawn != null)
+        {
+            Rotation();
+            Movement();
+            Shoot();
+        }
+        else if (spawn.spawnedObject != null)
+        {
+            pawn = spawn.spawnedObject.GetComponent<Pawn>();
+            pawn.controller = this;
+        }
+
+        if (lives <= 0)
+        {
+            spawn.enabled = false;
+        }
+
+    }
 
     /// <summary>
     /// Causes the pawn to face the mouse
     /// </summary>
     void Rotation()
     {
-        Plane thePlane = new Plane(Vector3.up, pawn.Transform.position);       //Plane Under Where Our Pawn is
+        Plane thePlane = new Plane(Vector3.up, pawn.Transform.position); //Plane Under Where Our Pawn is
         Ray theRay = Camera.main.ScreenPointToRay(Input.mousePosition); //Where the Mouse is Over the Plane
-        
+
         //Get Where the Mouse Intersects
         float distance;
-        thePlane.Raycast(theRay, out distance); 
+        thePlane.Raycast(theRay, out distance);
         Vector3 targetPoint = theRay.GetPoint(distance);
-        
+
         //Temp: Move object to point
         testObject.position = targetPoint;
 
@@ -58,7 +83,7 @@ public class CharacterController : MonoBehaviour
         //Get Player Input
         moveVector.x = Input.GetAxis("Horizontal");
         moveVector.z = Input.GetAxis("Vertical");
-        
+
         //Use Local Space
         moveVector = pawn.Transform.InverseTransformDirection(moveVector);
 
@@ -70,7 +95,7 @@ public class CharacterController : MonoBehaviour
         {
             pawn.isCrouching = true;
         }
-        else if(Input.GetKeyUp(KeyCode.LeftControl))
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             pawn.isCrouching = false;
         }
@@ -89,5 +114,10 @@ public class CharacterController : MonoBehaviour
         {
             pawn.gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
         }
+    }
+
+    public override void Die()
+    {
+        lives -= 1;
     }
 }

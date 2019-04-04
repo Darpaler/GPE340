@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AIController : MonoBehaviour {
+public class AIController : PawnController {
 
     //Variables
     private Pawn pawn;              //The Pawn Component

@@ -12,6 +12,7 @@ public class Health : MonoBehaviour {
     public float despawnTime;           //Time till dead player despawns 
     private RagdollControls ragdoll;    //Ragdoll Controls component
     private WeaponAgent weaponAgent;    //Weapon Agent component
+    public bool died = false;           //Weather the pawn is dead or not
 
 	// Use this for initialization
 	void Start ()
@@ -39,6 +40,7 @@ public class Health : MonoBehaviour {
     //Take damage
     public void TakeDamage(float amount)
     {
+        Pawn pawn = gameObject.GetComponent<Pawn>();
         //Subtract health
         health -= amount;
         
@@ -58,11 +60,19 @@ public class Health : MonoBehaviour {
                     gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
                 }
                 //Destroy the player
+                if (pawn != null)
+                {
+                    pawn.controller.Die();
+                }
                 Destroy(gameObject, despawnTime);
             }
             else
             {
                 //Destroy the player
+                if (pawn != null)
+                {
+                    pawn.controller.Die();
+                }
                 Destroy(gameObject);
             }
         }

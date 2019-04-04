@@ -34,6 +34,8 @@ public class Pawn : MonoBehaviour
     [SerializeField, Range(0f, 25f), Tooltip("The height of the player's crouching collider.")]
     public float crouchColliderHeight;          //The Height of The Player's Crouching Collider
 
+    public PawnController controller;
+
 
 	// Use this for initialization
 	void Start ()

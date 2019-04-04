@@ -2763,9 +2763,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9ece84f976e994284d456722fdfd03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 613
+  maxHealth: 30
   healthBar: {fileID: 0}
   despawnTime: 0
+  died: 0
 --- !u!114 &114137080528324790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2781,6 +2782,7 @@ MonoBehaviour:
     type: 2}
   attachmentPoint: {fileID: 4132652715676478}
   equippedWeapon: {fileID: 0}
+  UIWeaponPosition: {fileID: 0}
 --- !u!114 &114461549241678594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2952,6 +2954,7 @@ MonoBehaviour:
   normalColliderHeight: 2
   crouchColliderCenter: {x: 0, y: 0.75, z: 0}
   crouchColliderHeight: 1.5
+  controller: {fileID: 0}
 --- !u!136 &136696432290351498
 CapsuleCollider:
   m_ObjectHideFlags: 1

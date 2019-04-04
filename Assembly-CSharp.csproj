@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\DropController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\OneShotWeapon.cs" />
+    <Compile Include="Assets\Scripts\PawnController.cs" />
     <Compile Include="Assets\Scripts\PickUps\DamagePickUp.cs" />
     <Compile Include="Assets\Scripts\PickUps\HealthPickUp.cs" />
     <Compile Include="Assets\Scripts\PickUps\PickUp.cs" />
