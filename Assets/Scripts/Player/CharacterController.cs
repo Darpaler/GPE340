@@ -21,6 +21,11 @@ public class CharacterController : PawnController
     void Start()
     {
         spawn = GetComponent<SpawnPoint>();
+
+        if (spawn.objectToSpawn.GetComponent<WeaponAgent>() != null)
+        {
+            spawn.objectToSpawn.GetComponent<WeaponAgent>().UIWeaponPosition = GameManager.instance.uiWeaponPosition;
+        }
     }
 
     // Update is called once per frame
@@ -45,6 +50,7 @@ public class CharacterController : PawnController
         {
             pawn = spawn.spawnedObject.GetComponent<Pawn>();
             pawn.controller = this;
+            pawn.GetComponent<WeaponAgent>().UIWeaponPosition = GameManager.instance.uiWeaponPosition;
         }
 
         if (lives <= 0)

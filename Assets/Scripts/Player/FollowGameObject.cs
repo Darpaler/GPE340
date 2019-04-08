@@ -24,6 +24,7 @@ public class FollowGameObject : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+        if(targetObjectTransform == null) { return; }
         //Follow The Target Object at a Specific Offset
 	    tf.position = targetObjectTransform.position + offset;
         //Face the Target Object

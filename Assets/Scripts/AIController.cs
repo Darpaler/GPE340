@@ -20,7 +20,10 @@ public class AIController : PawnController {
         hp = GetComponent<Health>();
 
         //Set GameManager
-	    GameManager.instance.enemy = this;
+        GameManager.instance.enemies.Add(this);
+
+        //Set Pawn
+        pawn.controller = this;
 
 	}
 
@@ -37,35 +40,45 @@ public class AIController : PawnController {
         }
 
         //Chase Player
-        agent.SetDestination(GameManager.instance.player.pawn.tf.position);
-
-        //Always Face Player
-        pawn.RotateTowards(GameManager.instance.player.pawn.tf.position);
-
-        //If we're not too close to the player
-        if (Vector3.Distance(GameManager.instance.player.pawn.tf.position, pawn.tf.position) > targetDistance + 1)
+        if(GameManager.instance.player.pawn != null)
         {
-            //Get close to them
-            MoveWithRootMotion(true);
-            //Not close enough to shoot yet
-            pawn.gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
+            agent.SetDestination(GameManager.instance.player.pawn.tf.position);
+
+            //Always Face Player
+            pawn.RotateTowards(GameManager.instance.player.pawn.tf.position);
+
+            //If we're not too close to the player
+            if (Vector3.Distance(GameManager.instance.player.pawn.tf.position, pawn.tf.position) > targetDistance + 1)
+            {
+                //Get close to them
+                MoveWithRootMotion(true);
+                //Not close enough to shoot yet
+                pawn.gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
+            }
+            //If we're too close
+            else if (Vector3.Distance(GameManager.instance.player.pawn.tf.position, pawn.tf.position) < targetDistance - 1)
+            {
+                //Run away
+                MoveWithRootMotion(false);
+                //We're close enough to shoot now
+                pawn.gameObject.BroadcastMessage("PullTrigger", SendMessageOptions.DontRequireReceiver);
+            }
+            //If we're at the target distance
+            else
+            {
+                //Don't move
+                pawn.anim.SetFloat("Horizontal", 0);
+                pawn.anim.SetFloat("Vertical", 0);
+                //We're close enough to shoot
+                pawn.gameObject.BroadcastMessage("PullTrigger", SendMessageOptions.DontRequireReceiver);
+            }
         }
-        //If we're too close
-        else if (Vector3.Distance(GameManager.instance.player.pawn.tf.position, pawn.tf.position) < targetDistance - 1)
-        {
-            //Run away
-            MoveWithRootMotion(false);
-            //We're close enough to shoot now
-            pawn.gameObject.BroadcastMessage("PullTrigger", SendMessageOptions.DontRequireReceiver);
-        }
-        //If we're at the target distance
         else
         {
             //Don't move
             pawn.anim.SetFloat("Horizontal", 0);
             pawn.anim.SetFloat("Vertical", 0);
-            //We're close enough to shoot
-            pawn.gameObject.BroadcastMessage("PullTrigger", SendMessageOptions.DontRequireReceiver);
+            pawn.gameObject.BroadcastMessage("ReleaseTrigger", SendMessageOptions.DontRequireReceiver);
         }
 
     }
@@ -96,5 +109,10 @@ public class AIController : PawnController {
         agent.velocity = pawn.anim.velocity;
     }
 
+    public override void Die()
+    {
+        GameManager.instance.enemies.Remove(this);
+        GameManager.instance.playerScore += 1;
+    }
 
 }
