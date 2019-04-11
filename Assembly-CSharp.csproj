@@ -65,6 +65,7 @@
     <Compile Include="Assets\LowPoly Weapon Pack\Scripts\WeaponHolder.cs" />
     <Compile Include="Assets\Scripts\AIController.cs" />
     <Compile Include="Assets\Scripts\AlignRotation.cs" />
+    <Compile Include="Assets\Scripts\AnimationCurveTest.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\DropController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\PawnController.cs" />
     <Compile Include="Assets\Scripts\PickUps\DamagePickUp.cs" />
     <Compile Include="Assets\Scripts\PickUps\HealthPickUp.cs" />
+    <Compile Include="Assets\Scripts\PickUps\OneShotWeaponPickUp.cs" />
     <Compile Include="Assets\Scripts\PickUps\PickUp.cs" />
     <Compile Include="Assets\Scripts\PickUps\WeaponPickUp.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterController.cs" />

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33871067800882956}
   - component: {fileID: 23269258510948078}
   - component: {fileID: 135233376753113420}
-  - component: {fileID: 114866947582166850}
+  - component: {fileID: 114034037298268792}
   m_Layer: 0
   m_Name: PickUp_DiscoBall
   m_TagString: Untagged
@@ -85,7 +85,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1811352608003954}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114866947582166850
+--- !u!114 &114034037298268792
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1811352608003954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93073c7f0a6bc054f92043e7abacecfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 648f5aa4374a72741b6ba27d42e44090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 180

@@ -13,16 +13,19 @@ public class WeaponAgent : MonoBehaviour {
     private Animator anim;             //Animator component
     public Transform UIWeaponPosition; //Where to show the weapon on the UI
     private Weapon equippedWeaponUI;   //The weapon shown on the UI
+    public Pawn pawn;
 
     // Use this for initialization
     void Start () {
 
         //Get Components
         anim = gameObject.GetComponent<Animator>();
+        pawn = GetComponent<Pawn>();
 
         //Equip Default
         EquipWeapon(defaultWeapon);
-	}
+
+    }
 	
     //Equip Weapon
     public void EquipWeapon(Weapon weapon)

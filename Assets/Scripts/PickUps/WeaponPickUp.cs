@@ -6,8 +6,8 @@ public class WeaponPickUp : PickUp {
 
     //Variables
     public Weapon weapon;               //The weapon to give on pick up
-    WeaponAgent targetWeaponAgent;      //The target's Weapon Agent
-    private RagdollControls targetRagdoll;    //The target's Ragdoll Controls component
+    protected WeaponAgent targetWeaponAgent;      //The target's Weapon Agent
+    protected RagdollControls targetRagdoll;    //The target's Ragdoll Controls component
 
     public override void OnPickUp(GameObject target)
     {
