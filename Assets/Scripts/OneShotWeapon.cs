@@ -5,12 +5,15 @@ using UnityEngine;
 public class OneShotWeapon : ProjectileWeapon {
 
     //Variables
+    [SerializeField]
     private WeaponAgent weaponAgent;
+
+    private GameObject parentGameObject;
 
     void Start()
     {
         //Get Components
-        weaponAgent = GetComponent<WeaponAgent>();
+        weaponAgent = gameObject.transform.parent.parent.GetComponent<WeaponAgent>();
     }
 
     //Destroy Oneshot weapons after use
@@ -21,6 +24,11 @@ public class OneShotWeapon : ProjectileWeapon {
         {
             weaponAgent.Unequip();
             weaponAgent.attachmentPoint.GetChild(0).gameObject.SetActive(true);
+            weaponAgent.equippedWeapon = weaponAgent.attachmentPoint.GetChild(0).GetComponent<Weapon>();
+            weaponAgent.UIWeaponPosition.GetChild(0).gameObject.SetActive(true);
+            weaponAgent.equippedWeaponUI = weaponAgent.UIWeaponPosition.GetChild(0).GetComponent<Weapon>();
+            //Change player's animation
+            weaponAgent.anim.SetInteger("CurrentWeapon", (int)weaponAgent.equippedWeapon.animationType);
         }
        
     }

@@ -10,9 +10,9 @@ public class WeaponAgent : MonoBehaviour {
     public Weapon defaultWeapon;       //Starting weapon
     public Transform attachmentPoint;  //Where they hold the gun
     public Weapon equippedWeapon;      //Currently equiped weapon
-    private Animator anim;             //Animator component
+    public Animator anim;             //Animator component
     public Transform UIWeaponPosition; //Where to show the weapon on the UI
-    private Weapon equippedWeaponUI;   //The weapon shown on the UI
+    public Weapon equippedWeaponUI;   //The weapon shown on the UI
     public Pawn pawn;
 
     // Use this for initialization
@@ -46,6 +46,7 @@ public class WeaponAgent : MonoBehaviour {
         if (UIWeaponPosition != null)
         {
             equippedWeaponUI = Instantiate(weapon, UIWeaponPosition) as Weapon;
+            equippedWeaponUI.enabled = false;
             equippedWeaponUI.transform.localPosition = Vector3.zero;
         }
     }
@@ -65,7 +66,10 @@ public class WeaponAgent : MonoBehaviour {
             //Set the player's animation
             anim.SetInteger("CurrentWeapon", 0);
             //Set UI Weapon
-            Destroy(equippedWeaponUI.gameObject);
+            if (UIWeaponPosition != null)
+            {
+                Destroy(equippedWeaponUI.gameObject);
+            }
         }
     }
 

@@ -13,6 +13,7 @@ public class OneShotWeaponPickUp : WeaponPickUp {
         if (targetWeaponAgent != null)
         {
             //Hide their last weapon
+            targetWeaponAgent.UIWeaponPosition.GetChild(0).gameObject.SetActive(false);
             targetWeaponAgent.attachmentPoint.GetChild(0).gameObject.SetActive(false);
 
             //Equip the new weapon
