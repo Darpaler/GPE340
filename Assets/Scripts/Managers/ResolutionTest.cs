@@ -88,8 +88,8 @@ public class ResolutionTest : MonoBehaviour
     {
         //Set Audio
         PlayerPrefs.SetFloat("Master Volume", masterVolumeSlider.value);
-        PlayerPrefs.SetFloat("Music Volume", musicVolumeSlider.maxValue);
-        PlayerPrefs.SetFloat("SFX Volume", sfxVolumeSlider.maxValue);
+        PlayerPrefs.SetFloat("Music Volume", musicVolumeSlider.value);
+        PlayerPrefs.SetFloat("SFX Volume", sfxVolumeSlider.value);
         audioMixer.SetFloat("MainVolume", volumeVsDecibels.Evaluate(masterVolumeSlider.value));
         audioMixer.SetFloat("MusicVolume", volumeVsDecibels.Evaluate(musicVolumeSlider.value));
         audioMixer.SetFloat("SFXVolume", volumeVsDecibels.Evaluate(sfxVolumeSlider.value));
