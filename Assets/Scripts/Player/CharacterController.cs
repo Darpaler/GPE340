@@ -125,6 +125,7 @@ public class CharacterController : PawnController
     public override void Die()
     {
         lives -= 1;
+        if(lives <= 0) { GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().RunGameOver(); }
         for (int i = 0; i < GameManager.instance.uiWeaponPosition.childCount; i++)
         {
             Destroy(GameManager.instance.uiWeaponPosition.GetChild(i).gameObject);
