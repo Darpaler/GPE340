@@ -226,6 +226,7 @@ MonoBehaviour:
   shotsPerMinute: 1
   spread: 360
   projectileCount: 100
+  firingSound: {fileID: 8300000, guid: 5312291c2a1932a479953e4046ce3582, type: 3}
   weaponAgent: {fileID: 0}
 --- !u!135 &135688784399845000
 SphereCollider:

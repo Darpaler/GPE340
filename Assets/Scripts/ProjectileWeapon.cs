@@ -15,10 +15,15 @@ public class ProjectileWeapon : Weapon
     public float spread;                //The bullet spread
     public float projectileCount;       //How many shots at once
 
+    [Header("Audio Settings")]
+    public AudioClip firingSound;        //The sound made when firing
+    private AudioSource audioSource;     //The AudioSouce Components
+
     private void Awake()
     {
         //Set the time
         timeNextShotIsReady = Time.time;
+        audioSource = GetComponent<AudioSource>();
     }
 
     protected void Update()
@@ -55,6 +60,11 @@ public class ProjectileWeapon : Weapon
                     projectile.gameObject.layer = gameObject.layer;
                     //Add a force to it
                     projectile.rb.AddRelativeForce(Vector3.forward * muzzleVelocity, ForceMode.VelocityChange);
+                    //Play Sound
+                    if (audioSource)
+                    {
+                        audioSource.PlayOneShot(firingSound);
+                    }
                 }
                 //Reset shot time
                 timeNextShotIsReady += 60f / shotsPerMinute;

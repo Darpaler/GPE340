@@ -32,4 +32,10 @@ public class OneShotWeapon : ProjectileWeapon {
         }
        
     }
+
+    private void OnDestroy()
+    {
+        AudioSource.PlayClipAtPoint(firingSound, transform.position, 1);
+    }
+
 }

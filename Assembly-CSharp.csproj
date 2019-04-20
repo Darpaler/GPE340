@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\AnimationCurveTest.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\DropController.cs" />
+    <Compile Include="Assets\Scripts\Footstep.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\OneShotWeapon.cs" />
